@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: #656565;
+  max-width: 100%;
+  height: 100%;
+}
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.weather {
+  background: url("../img/bg/bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  padding: 20px 0;
+}
+.weather::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  background-color: rgba(255, 184, 0, 0.15);
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+  z-index: 2;
+}
+.fullscreen-container {
+  width: 100%;
+  flex: 1 1 auto;
+  max-width: 1170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.blur {
+  backdrop-filter: blur(6px);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+}
+.weather-header {
+  margin: auto;
+  padding: 26px 30px 32px;
+  position: relative;
+  max-width: 1006px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.weather-title {
+  font-size: 45px;
+  font-weight: 700;
+}
+.weather-date {
+  font-size: 45px;
+  font-weight: 700;
+}
+.city-row {
+  max-width: 946px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 60px;
+}
+.choose-contry {
+  width: 402px;
+  text-align: center;
+  line-height: 47px;
+  padding: 29px 21px 28px;
+}
+.current-contry {
+  width: 458px;
+  height: 105px;
+  text-align: center;
+  margin-left: auto;
+  font-size: 40px;
+  font-weight: 600;
+  padding: 29px 21px 28px;
+}
+.choose-contry__input {
+  width: 360px;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  vertical-align: -10px;
+  color: #2c8399;
+}
+.date-row {
+  max-width: 946px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.current-date {
+  width: 402px;
+  padding: 70px 52px;
+  border-radius: 20px;
+  align-self: center;
+}
+.wind-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+.wind-title,
+.pressure-title,
+.humidity-title {
+  font-size: 27px;
+  font-weight: 400;
+}
+.wind-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  color: rgba(81, 192, 239, 0.6);
+  font-size: 24px;
+}
+.wind-icon__pic {
+  color: rgba(81, 192, 239, 0.6);
+}
+.wind-number,
+.pressure-number,
+.humidity-number {
+  font-size: 28px;
+  font-weight: 500;
+  color: rgb(229, 163, 65);
+}
+.pressure-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+.pressure-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(81, 192, 239, 0.6);
+  font-size: 24px;
+}
+.humidity-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.humidity-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(81, 192, 239, 0.6);
+  font-size: 24px;
+}
+.cloudly-wrap {
+  width: 458px;
+}
+.cloudly-row {
+  height: 343px;
+}
+.cloudly-title {
+  text-align: center;
+  padding: 60px 0 0 0;
+  font-size: 23px;
+  font-weight: 400;
+}
+.cloudly-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 78px 60px;
+}
+.cloudly-number__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.cloudly-number {
+  width: 66px;
+  height: 76px;
+  font-size: 64px;
+  font-weight: 600;
+  color: rgba(229, 163, 65);
+}
+.temperature {
+  font-size: 28px;
+  font-weight: 300;
+  align-self: flex-start;
+  color: rgba(81, 192, 239, 1);
+}
+.cloudly-icon img {
+  width: 163px;
+}
+.design {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 300;
+  color: rgba(37, 18, 18, 0.6);
+}
+.date-calendar {
+  display: flex;
+}
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <title>The Weather Today</title>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <section class='section weather'>
+      <div class='container fullscreen-container'>
+        <div class="fullscreen-wrapper">
+          <div class="fullscreen-main">
+
+            <div class="blur weather-header">
+              <h1 class="weather-title">The Weather Today</h1>
+              <div class="date-calendar">
+                <div class="weather-date weather-date__day"></div>
+                <div class="weather-date weather-date__month"></div>
+                <div class="weather-date weather-date__year"></div>
+              </div>
+            </div>
+
+            <div class="city-row">
+              <div class="blur choose-contry">
+                <select id="city" class="choose-contry__input">
+                  <option>Choose your city ...</option>
+                </select>
+              </div>
+              <div class="blur current-contry"></div>
+            </div>
+
+            <div class="date-row">
+
+              <div class="blur current-date">
+
+                <div class="wind-wrap">
+                  <h2 class="wind-title">
+                    Wind
+                  </h2>
+                  <div class="wind-icon">
+                    <i class="fas fa-wind"></i>
+                  </div>
+                  <div class="wind-number"></div>
+                  <div class="wind-discription">
+                    m/s
+                  </div>
+                </div>
+
+                <div class="pressure-wrap">
+                  <h2 class="pressure-title">
+                    Pressure
+                  </h2>
+                  <div class="pressure-icon">
+                    <i class="fas fa-compress-arrows-alt"></i>
+                  </div>
+                  <div class="pressure-number"></div>
+                  <div class="pressure-discription">
+                    mph
+                  </div>
+                </div>
+
+                <div class="humidity-wrap">
+                  <h2 class="humidity-title">
+                    Humidity
+                  </h2>
+                  <div class="humidity-icon">
+                    <i class="fas fa-water"></i>
+                  </div>
+                  <div class="humidity-number"> </div>
+                  <div class="humidity-discription">
+                    %
+                  </div>
+                </div>
+              </div>
+
+              <div class="cloudly-wrap">
+                <div class="blur cloudly-row">
+                  <h2 class="cloudly-title">
+                    Cloudly
+                  </h2>
+                  <div class="cloudly-content">
+                    <div class="cloudly-number__wrap">
+                      <div class="cloudly-number"></div>
+                      <div class="temperature"></div>
+                    </div>
+                    <div class="cloudly-icon"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+      
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+
+  <script type="module" src="./js/script.js"></script>
+</body>
+
+</html>
